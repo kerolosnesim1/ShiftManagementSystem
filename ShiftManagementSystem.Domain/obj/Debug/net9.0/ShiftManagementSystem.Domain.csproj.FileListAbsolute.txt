@@ -1,0 +1,12 @@
+C:\Users\trust\Desktop\ShiftManagementSystem\ShiftManagementSystem.Domain\bin\Debug\net9.0\ShiftManagementSystem.Domain.deps.json
+C:\Users\trust\Desktop\ShiftManagementSystem\ShiftManagementSystem.Domain\bin\Debug\net9.0\ShiftManagementSystem.Domain.dll
+C:\Users\trust\Desktop\ShiftManagementSystem\ShiftManagementSystem.Domain\bin\Debug\net9.0\ShiftManagementSystem.Domain.pdb
+C:\Users\trust\Desktop\ShiftManagementSystem\ShiftManagementSystem.Domain\obj\Debug\net9.0\ShiftManagementSystem.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\trust\Desktop\ShiftManagementSystem\ShiftManagementSystem.Domain\obj\Debug\net9.0\ShiftManagementSystem.Domain.AssemblyInfoInputs.cache
+C:\Users\trust\Desktop\ShiftManagementSystem\ShiftManagementSystem.Domain\obj\Debug\net9.0\ShiftManagementSystem.Domain.AssemblyInfo.cs
+C:\Users\trust\Desktop\ShiftManagementSystem\ShiftManagementSystem.Domain\obj\Debug\net9.0\ShiftManagementSystem.Domain.csproj.CoreCompileInputs.cache
+C:\Users\trust\Desktop\ShiftManagementSystem\ShiftManagementSystem.Domain\obj\Debug\net9.0\ShiftManagementSystem.Domain.sourcelink.json
+C:\Users\trust\Desktop\ShiftManagementSystem\ShiftManagementSystem.Domain\obj\Debug\net9.0\ShiftManagementSystem.Domain.dll
+C:\Users\trust\Desktop\ShiftManagementSystem\ShiftManagementSystem.Domain\obj\Debug\net9.0\refint\ShiftManagementSystem.Domain.dll
+C:\Users\trust\Desktop\ShiftManagementSystem\ShiftManagementSystem.Domain\obj\Debug\net9.0\ShiftManagementSystem.Domain.pdb
+C:\Users\trust\Desktop\ShiftManagementSystem\ShiftManagementSystem.Domain\obj\Debug\net9.0\ref\ShiftManagementSystem.Domain.dll

@@ -1,0 +1,16 @@
+C:\Users\trust\Desktop\ShiftManagementSystem\ShiftManagementSystem.Application\bin\Debug\net9.0\ShiftManagementSystem.Application.deps.json
+C:\Users\trust\Desktop\ShiftManagementSystem\ShiftManagementSystem.Application\bin\Debug\net9.0\ShiftManagementSystem.Application.dll
+C:\Users\trust\Desktop\ShiftManagementSystem\ShiftManagementSystem.Application\bin\Debug\net9.0\ShiftManagementSystem.Application.pdb
+C:\Users\trust\Desktop\ShiftManagementSystem\ShiftManagementSystem.Application\bin\Debug\net9.0\ShiftManagementSystem.Domain.dll
+C:\Users\trust\Desktop\ShiftManagementSystem\ShiftManagementSystem.Application\bin\Debug\net9.0\ShiftManagementSystem.Domain.pdb
+C:\Users\trust\Desktop\ShiftManagementSystem\ShiftManagementSystem.Application\obj\Debug\net9.0\ShiftManagementSystem.Application.csproj.AssemblyReference.cache
+C:\Users\trust\Desktop\ShiftManagementSystem\ShiftManagementSystem.Application\obj\Debug\net9.0\ShiftManagementSystem.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\trust\Desktop\ShiftManagementSystem\ShiftManagementSystem.Application\obj\Debug\net9.0\ShiftManagementSystem.Application.AssemblyInfoInputs.cache
+C:\Users\trust\Desktop\ShiftManagementSystem\ShiftManagementSystem.Application\obj\Debug\net9.0\ShiftManagementSystem.Application.AssemblyInfo.cs
+C:\Users\trust\Desktop\ShiftManagementSystem\ShiftManagementSystem.Application\obj\Debug\net9.0\ShiftManagementSystem.Application.csproj.CoreCompileInputs.cache
+C:\Users\trust\Desktop\ShiftManagementSystem\ShiftManagementSystem.Application\obj\Debug\net9.0\ShiftManagementSystem.Application.sourcelink.json
+C:\Users\trust\Desktop\ShiftManagementSystem\ShiftManagementSystem.Application\obj\Debug\net9.0\ShiftMan.4CD5F5DD.Up2Date
+C:\Users\trust\Desktop\ShiftManagementSystem\ShiftManagementSystem.Application\obj\Debug\net9.0\ShiftManagementSystem.Application.dll
+C:\Users\trust\Desktop\ShiftManagementSystem\ShiftManagementSystem.Application\obj\Debug\net9.0\refint\ShiftManagementSystem.Application.dll
+C:\Users\trust\Desktop\ShiftManagementSystem\ShiftManagementSystem.Application\obj\Debug\net9.0\ShiftManagementSystem.Application.pdb
+C:\Users\trust\Desktop\ShiftManagementSystem\ShiftManagementSystem.Application\obj\Debug\net9.0\ref\ShiftManagementSystem.Application.dll

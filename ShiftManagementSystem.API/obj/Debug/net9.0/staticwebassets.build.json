@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "464G0+WWCJOqvjWPTBUKpka9XBu4VjaiVANe9cwVyeY=",
+  "Source": "ShiftManagementSystem.API",
+  "BasePath": "_content/ShiftManagementSystem.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
