@@ -8,8 +8,9 @@ namespace ShiftManagementSystem.Domain.Enums
 {
     public enum Role 
     { 
-        Admin,
-        Employee
+        Employee = 0,
+        Manager = 1,
+        Admin = 2
     }
 
 

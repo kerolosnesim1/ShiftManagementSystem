@@ -16,18 +16,44 @@ namespace ShiftManagementSystem.Infrastructure.Repositories
 
         public async Task<List<Shift>> GetAllAsync()
         {
-            return await _context.Shifts.ToListAsync();
+            return await _context.Shifts
+            .Include(s => s.ShiftAssignments)
+               .ThenInclude(sa => sa.User)
+            .ToListAsync();
         }
 
         public async Task<Shift?> GetByIdAsync(Guid id)
         {
-            return await _context.Shifts.FindAsync(id);
+            return await _context.Shifts
+              .Include(s => s.ShiftAssignments)
+              .ThenInclude(sa => sa.User)
+              .FirstOrDefaultAsync(s => s.Id == id);
         }
+
+        public async Task<List<Shift>> GetShiftByDateAsync(DateTime date)
+        {
+            return await _context.Shifts 
+            .Where(s => s.Date == date)
+            .Include(s => s.ShiftAssignments)
+            .ThenInclude(sa => sa.User)
+            .ToListAsync();
+        }
+
+        public async Task<List<Shift>> GetShiftByUserIDAsync(Guid userId)
+        {
+             return await _context.Shifts
+             .Where(s => s.ShiftAssignments.Any(sa => sa.UserId == userID))
+             .Include(s => s.shiftAssignments)
+             .ThenInclude(sa => sa.User)
+             .ToListAsync();
+        }
+
 
         public async Task AddAsync(Shift shift)
         {
             await _context.Shifts.AddAsync(shift);
             await _context.SaveChangesAsync();
+            return shift;
         }
 
         public async Task UpdateAsync(Shift shift)

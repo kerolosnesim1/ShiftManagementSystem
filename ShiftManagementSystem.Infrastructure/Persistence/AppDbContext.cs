@@ -23,17 +23,41 @@ namespace ShiftManagementSystem.Infrastructure.Persistence
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+             
+             //configure user entity
+            modelBuilder,Entity<User>(entity =>{
+                entity.HashKey(e => e.Id);
+                entity.property(e => e.Name).ISRequired(),HasMaxLength(100);
+                entity.property(e => e.Email).ISRequired(),HasMaxLength(100);
+                entity.property(e => e.PasswordHash).ISRequired();
+            })
 
-            // Configure relationships
-            modelBuilder.Entity<ShiftAssignment>()
-                .HasOne(sa => sa.User)
-                .WithMany(u => u.ShiftAssignments)
-                .HasForeignKey(sa => sa.UserId);
+            //configure shift entity
+            modelBuilder.Entity<Shift>(entity =>{
+                entity.HashKey(e => e.Id);
+                entity.property(e => e.Date).ISRequired():
+                entity.property(e => e.StartTime).ISRequired();
+                entity.property(e => e.EndTime).IsRequired();
+            })
 
-            modelBuilder.Entity<ShiftAssignment>()
-                .HasOne(sa => sa.Shift)
-                .WithMany(s => s.ShiftAssignments)
-                .HasForeignKey(sa => sa.ShiftId);
+          
+             // Configure ShiftAssignment entity
+            modelBuilder.Entity<ShiftAssignment>(entity =>
+            {
+                entity.HasKey(e => e.Id);
+                
+                // Configure relationship with User
+                entity.HasOne(e => e.User)
+                      .WithMany(u => u.ShiftAssignments)
+                      .HasForeignKey(e => e.UserId)
+                      .OnDelete(DeleteBehavior.Cascade);
+                
+                // Configure relationship with Shift
+                entity.HasOne(e => e.Shift)
+                      .WithMany(s => s.ShiftAssignments)
+                      .HasForeignKey(e => e.ShiftId)
+                      .OnDelete(DeleteBehavior.Cascade);
+            });
         }
     }
 }
