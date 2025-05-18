@@ -22,12 +22,12 @@ namespace ShiftManagementSystem.Infrastructure.Repositories
             .ToListAsync();
         }
 
-        public async Task<Shift?> GetByIdAsync(Guid id)
+        public async Task<Shift> GetByIdAsync(Guid id)
         {
             return await _context.Shifts
               .Include(s => s.ShiftAssignments)
               .ThenInclude(sa => sa.User)
-              .FirstOrDefaultAsync(s => s.Id == id);
+              .FirstOrDefaultAsync(s => s.ID == id);
         }
 
         public async Task<List<Shift>> GetShiftByDateAsync(DateTime date)
@@ -42,18 +42,34 @@ namespace ShiftManagementSystem.Infrastructure.Repositories
         public async Task<List<Shift>> GetShiftByUserIDAsync(Guid userId)
         {
              return await _context.Shifts
-             .Where(s => s.ShiftAssignments.Any(sa => sa.UserId == userID))
-             .Include(s => s.shiftAssignments)
+             .Where(s => s.ShiftAssignments.Any(sa => sa.UserId == userId))
+             .Include(s => s.ShiftAssignments)
              .ThenInclude(sa => sa.User)
              .ToListAsync();
         }
 
+        public async Task<List<Shift>> GetShiftsByDateAsync(DateTime date)
+        {
+            return await _context.Shifts
+                .Include(s => s.ShiftAssignments)
+                    .ThenInclude(sa => sa.User)
+                .Where(s => s.Date.Date == date.Date)
+                .ToListAsync();
+        }
+
+        public async Task<List<Shift>> GetShiftsByUserIdAsync(Guid userId)
+        {
+            return await _context.Shifts
+                .Include(s => s.ShiftAssignments)
+                    .ThenInclude(sa => sa.User)
+                .Where(s => s.ShiftAssignments.Any(sa => sa.UserId == userId))
+                .ToListAsync();
+        }
 
         public async Task AddAsync(Shift shift)
         {
             await _context.Shifts.AddAsync(shift);
             await _context.SaveChangesAsync();
-            return shift;
         }
 
         public async Task UpdateAsync(Shift shift)

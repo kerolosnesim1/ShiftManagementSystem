@@ -1,4 +1,5 @@
 C:\Users\trust\Desktop\ShiftManagementSystem\ShiftManagementSystem.Infrastructure\bin\Debug\net9.0\ShiftManagementSystem.Infrastructure.deps.json
+C:\Users\trust\Desktop\ShiftManagementSystem\ShiftManagementSystem.Infrastructure\bin\Debug\net9.0\ShiftManagementSystem.Infrastructure.runtimeconfig.json
 C:\Users\trust\Desktop\ShiftManagementSystem\ShiftManagementSystem.Infrastructure\bin\Debug\net9.0\ShiftManagementSystem.Infrastructure.dll
 C:\Users\trust\Desktop\ShiftManagementSystem\ShiftManagementSystem.Infrastructure\bin\Debug\net9.0\ShiftManagementSystem.Infrastructure.pdb
 C:\Users\trust\Desktop\ShiftManagementSystem\ShiftManagementSystem.Infrastructure\bin\Debug\net9.0\ShiftManagementSystem.Application.dll
@@ -15,6 +16,5 @@ C:\Users\trust\Desktop\ShiftManagementSystem\ShiftManagementSystem.Infrastructur
 C:\Users\trust\Desktop\ShiftManagementSystem\ShiftManagementSystem.Infrastructure\obj\Debug\net9.0\ShiftManagementSystem.Infrastructure.dll
 C:\Users\trust\Desktop\ShiftManagementSystem\ShiftManagementSystem.Infrastructure\obj\Debug\net9.0\refint\ShiftManagementSystem.Infrastructure.dll
 C:\Users\trust\Desktop\ShiftManagementSystem\ShiftManagementSystem.Infrastructure\obj\Debug\net9.0\ShiftManagementSystem.Infrastructure.pdb
-C:\Users\trust\Desktop\ShiftManagementSystem\ShiftManagementSystem.Infrastructure\obj\Debug\net9.0\ref\ShiftManagementSystem.Infrastructure.dll
-C:\Users\trust\Desktop\ShiftManagementSystem\ShiftManagementSystem.Infrastructure\bin\Debug\net9.0\ShiftManagementSystem.Infrastructure.runtimeconfig.json
 C:\Users\trust\Desktop\ShiftManagementSystem\ShiftManagementSystem.Infrastructure\obj\Debug\net9.0\ShiftManagementSystem.Infrastructure.genruntimeconfig.cache
+C:\Users\trust\Desktop\ShiftManagementSystem\ShiftManagementSystem.Infrastructure\obj\Debug\net9.0\ref\ShiftManagementSystem.Infrastructure.dll

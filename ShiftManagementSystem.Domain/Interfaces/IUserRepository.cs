@@ -11,5 +11,6 @@ namespace ShiftManagementSystem.Domain.Interfaces
         // Specific methods for User
         Task<User> GetByEmailAsync(string email);
         Task<bool> EmailExistsAsync(string email);
+        Task DeleteAsync(Guid id);
     }
 } 

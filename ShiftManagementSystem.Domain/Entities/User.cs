@@ -14,7 +14,8 @@ public class User
     public string PasswordHash { get; set; } = String.Empty;
     public string FullName { get; set; } = String.Empty;
     public Role Role { get; set; }
+    public string Email { get; set; } = string.Empty;
 
 
-    public ICollection<ShiftAssignment> ShiftAssignments { get; set; }    
+    public ICollection<ShiftAssignment> ShiftAssignments { get; set; } = new List<ShiftAssignment>();   
 }

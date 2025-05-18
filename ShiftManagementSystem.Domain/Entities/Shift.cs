@@ -12,8 +12,8 @@ public class Shift
     public DateTime Date { get; set; }
     public TimeSpan StartTime { get; set; }
     public TimeSpan EndTime { get; set; }
-    public string ShiftType { get; set; } = stringType.Custom;
+    public string ShiftType { get; set; } = string.Empty;
 
-
-    public ICollection<ShiftAssignment> ShiftAssignments { get; set; }
+ 
+   public ICollection<ShiftAssignment> ShiftAssignments { get; set; } = new List<ShiftAssignment>();
 }

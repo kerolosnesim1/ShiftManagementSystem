@@ -25,20 +25,20 @@ namespace ShiftManagementSystem.Infrastructure.Persistence
             base.OnModelCreating(modelBuilder);
              
              //configure user entity
-            modelBuilder,Entity<User>(entity =>{
-                entity.HashKey(e => e.Id);
-                entity.property(e => e.Name).ISRequired(),HasMaxLength(100);
-                entity.property(e => e.Email).ISRequired(),HasMaxLength(100);
-                entity.property(e => e.PasswordHash).ISRequired();
-            })
+            modelBuilder.Entity<User>(entity =>{
+                entity.HasKey(e => e.Id);
+                entity.Property(e => e.Name).IsRequired().HasMaxLength(100);
+                entity.Property(e => e.Email).IsRequired().HasMaxLength(100);
+                entity.Property(e => e.PasswordHash).IsRequired();
+            });
 
             //configure shift entity
             modelBuilder.Entity<Shift>(entity =>{
-                entity.HashKey(e => e.Id);
-                entity.property(e => e.Date).ISRequired():
-                entity.property(e => e.StartTime).ISRequired();
-                entity.property(e => e.EndTime).IsRequired();
-            })
+                entity.HasKey(e => e.ID);
+                entity.Property(e => e.Date).IsRequired();
+                entity.Property(e => e.StartTime).IsRequired();
+                entity.Property(e => e.EndTime).IsRequired();
+            });
 
           
              // Configure ShiftAssignment entity
