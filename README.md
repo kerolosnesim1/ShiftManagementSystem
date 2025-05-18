@@ -71,17 +71,11 @@ dotnet run --project .\ShiftManagementSystem.API
 
 The following features are currently being implemented:
 
-- **JWT Authentication**: Secure token-based authentication (40% complete)
-- **Role-based authorization**: Fine-grained access control (Planning stage)
-
-## 📝 Future Roadmap
-
-Features planned for future releases:
-
+- **JWT Authentication**: Secure token-based authentication 
+- **Role-based authorization**: Fine-grained access control 
 - **Unit and integration testing**: Comprehensive test coverage
-- **Email notifications**: Automated alerts for shift assignments and changes
-- **Mobile client application**: Cross-platform mobile interface
-- **Reporting module**: Advanced analytics and reporting capabilities
+
+  
 
 ## 📄 License
 
